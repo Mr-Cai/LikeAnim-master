@@ -28,7 +28,6 @@ public class LikeStar extends ViewGroup {
     //定义贝塞尔曲线的数据点和两个控制点
     private PointF startP, endP, pointX, pointY;
     private Random random = new Random();
-
     public LikeStar(Context context) {
         this(context, null);
     }
@@ -49,10 +48,10 @@ public class LikeStar extends ViewGroup {
         pointX = new PointF();
         pointY = new PointF();
         //初始化图片资源
-        mStarDrawable.add(getResources().getDrawable(R.drawable.like_red));
-        mStarDrawable.add(getResources().getDrawable(R.drawable.like_blue));
-        mStarDrawable.add(getResources().getDrawable(R.drawable.like_green));
-        mStarDrawable.add(getResources().getDrawable(R.drawable.like_repple));
+        mStarDrawable.add(getResources().getDrawable(R.drawable.like_red, null));
+        mStarDrawable.add(getResources().getDrawable(R.drawable.like_blue, null));
+        mStarDrawable.add(getResources().getDrawable(R.drawable.like_green, null));
+        mStarDrawable.add(getResources().getDrawable(R.drawable.like_repple, null));
         //初始化插补器
         @SuppressWarnings("MismatchedQueryAndUpdateOfCollection")
         List<Interpolator> interpolators = new ArrayList<>();
